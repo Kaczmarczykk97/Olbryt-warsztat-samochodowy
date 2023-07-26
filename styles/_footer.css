@@ -1,0 +1,30 @@
+/***** FOOTER *****/
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer a .icon {
+  color: var(--text-color-white);
+  transition: all 0.4s;
+}
+
+.footer a .icon:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 1rem var(--main-color-blue);
+}
+/***** COPYRIGHT *****/
+.copyright {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/***** MEDIA QUERIES *****/
+/* 600px */
+@media (max-width: 37.5em) {
+  .footer {
+    margin-top: 5rem;
+  }
+}

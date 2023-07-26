@@ -1,0 +1,100 @@
+/***** OFFER *****/
+.section-offer {
+  width: 85%;
+}
+
+.wrapper {
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2.5rem;
+}
+
+.section-offer .container-offer {
+  width: 100%;
+  max-width: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.8);
+  transition: all 0.4s;
+}
+
+.section-offer .container-offer:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.2);
+}
+
+.section-offer .container-offer:hover .offer-img-container {
+  filter: brightness(1.2);
+}
+
+.container-offer .offer-text-container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.container-offer .offer-img-container {
+  height: 28rem;
+  width: 100%;
+  box-shadow: 0 0 20px var(--main-color-blue);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.4s;
+}
+.offer-img-1 {
+  background-image: linear-gradient(
+      to Top,
+      var(--main-color-blue-opacity),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/offer-1.jpg);
+}
+
+.offer-img-2 {
+  background-image: linear-gradient(
+      to Top,
+      var(--main-color-blue-opacity),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/offer-2.jpg);
+}
+
+.offer-img-3 {
+  background-image: linear-gradient(
+      to Top,
+      var(--main-color-blue-opacity),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/offer-3.jpg);
+}
+
+.offer-img-4 {
+  background-image: linear-gradient(
+      to Top,
+      var(--main-color-blue-opacity),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/offer-4.jpg);
+}
+
+/***** MEDIA QUERIES *****/
+/* 600px */
+@media (max-width: 37.5em) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}

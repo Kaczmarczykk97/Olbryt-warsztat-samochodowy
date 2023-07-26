@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warsztat samochodowy</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+    <script src="script.js" defer></script>
+    <script src="lightbox-plus-jquery.js" defer></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/logo.png" alt="logo" class="logo" />
+      <ul class="items-list">
+        <li class="item"><a href="#section-header" class="text">Start</a></li>
+        <li class="item"><a href="#section-about" class="text">Why us?</a></li>
+        <li class="item">
+          <a href="#section-employees" class="text">Our workers</a>
+        </li>
+        <li class="item">
+          <a href="#section-gallery" class="text">Gallery</a>
+        </li>
+        <li class="item"><a href="#section-offer" class="text">Offer</a></li>
+        <li class="item">
+          <a href="#section-contact" class="text">Contact</a>
+        </li>
+      </ul>
+      <div class="menu-hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <header class="section-header" id="section-header">
+      <div class="header-text-container">
+        <h1 class="heading-h1">
+          <span class="text-effect">Warszat</span> - Michał Olbryt
+        </h1>
+        <h3 class="heading-h3">Motoryzacja to nasza pasja!</h3>
+        <button class="btn text">
+          <span><a href="#section-contact">Napisz do nas </a></span><i></i>
+        </button>
+      </div>
+    </header>
+    <section class="section section-about" id="section-about">
+      <h2 class="heading-h2"><span class="text-effect">About</span> us</h2>
+      <div class="container-about">
+        <div class="about-text-container">
+          <h3 class="heading-h3">Nasza firma zapewnia:</h3>
+          <div class="profit">
+            <ion-icon name="shield-checkmark-outline" class="icon"></ion-icon>
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+            </p>
+          </div>
+          <div class="profit">
+            <ion-icon name="construct-outline" class="icon"></ion-icon>
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+            </p>
+          </div>
+          <div class="profit">
+            <ion-icon name="wallet-outline" class="icon"></ion-icon>
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+            </p>
+          </div>
+        </div>
+        <div class="about-img-container"></div>
+      </div>
+    </section>
+    <section class="section section-employees" id="section-employees">
+      <h2 class="heading-h2">Our <span class="text-effect">crew</span></h2>
+      <div class="container-employees">
+        <div class="card-employee">
+          <div class="image-employee">
+            <img src="images/employee-1.png" alt="employee" />
+          </div>
+          <h3 class="heading-h3">Michał Olbryt</h3>
+          <h4 class="heading-h4">Główny szefu</h4>
+          <p class="text-small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            eveniet nesciunt architecto obcaecati dolore totam neque, aspernatur
+            suscipit inventore? Quibusdam?
+          </p>
+        </div>
+        <div class="card-employee">
+          <div class="image-employee">
+            <img src="images/employee-2.png" alt="employee" />
+          </div>
+          <h3 class="heading-h3">Staszek Śmietana</h3>
+          <h4 class="heading-h4">Elektromechanik</h4>
+          <p class="text-small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            eveniet nesciunt architecto obcaecati dolore totam neque, aspernatur
+            suscipit inventore? Quibusdam?
+          </p>
+        </div>
+        <div class="card-employee">
+          <div class="image-employee">
+            <img src="images/employee-3.png" alt="employee" />
+          </div>
+          <h3 class="heading-h3">Zbyszek Łopata</h3>
+          <h4 class="heading-h4">Mechanik</h4>
+          <p class="text-small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            eveniet nesciunt architecto obcaecati dolore totam neque, aspernatur
+            suscipit inventore? Quibusdam?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-gallery" id="section-gallery">
+      <h2 class="heading-h2"><span class="text-effect">Nasze</span> prace</h2>
+      <div class="container-gallery">
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-1.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 1"
+          >
+            <img src="images/gallery/gallery-1.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-2.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 2"
+          >
+            <img src="images/gallery/gallery-2.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-3.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 3"
+          >
+            <img src="images/gallery/gallery-3.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-4.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 4"
+          >
+            <img src="images/gallery/gallery-4.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-5.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 5"
+          >
+            <img src="images/gallery/gallery-5.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-6.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 6"
+          >
+            <img src="images/gallery/gallery-6.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-7.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 7"
+          >
+            <img src="images/gallery/gallery-7.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-8.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 8"
+          >
+            <img src="images/gallery/gallery-8.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-9.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 9"
+          >
+            <img src="images/gallery/gallery-9.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-10.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 10"
+          >
+            <img src="images/gallery/gallery-10.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-11.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 11"
+          >
+            <img src="images/gallery/gallery-11.jpg" alt="car mechanic" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/gallery/gallery-12.jpg"
+            data-lightbox="Gallery"
+            data-title="Photo - 12"
+          >
+            <img src="images/gallery/gallery-12.jpg" alt="car mechanic" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section section-offer" id="section-offer">
+      <h2 class="heading-h2">
+        Zapoznaj się <span class="text-effect">z ofertą</span>
+      </h2>
+      <div class="wrapper">
+        <div class="container-offer">
+          <div class="offer-img-container offer-img-1"></div>
+          <div class="offer-text-container">
+            <h3 class="heading-h3">Laminacja</h3>
+
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+            </p>
+          </div>
+        </div>
+        <div class="container-offer">
+          <div class="offer-img-container offer-img-2"></div>
+          <div class="offer-text-container">
+            <h3 class="heading-h3">Tuning</h3>
+
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="container-offer">
+          <div class="offer-img-container offer-img-3"></div>
+          <div class="offer-text-container">
+            <h3 class="heading-h3">Renowacja</h3>
+
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="container-offer">
+          <div class="offer-img-container offer-img-4"></div>
+          <div class="offer-text-container">
+            <h3 class="heading-h3">Przyciemnianie szyb i lamp</h3>
+
+            <p class="text-small">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              molestiae praesentium rem in minima sunt velit molestias aliquid.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-review">
+      <h2 class="heading heading-h2">
+        <span class="text-effect">Opinie</span> naszych klientów
+      </h2>
+      <div class="reviews-container">
+        <div class="review">
+          <img
+            src="images/customers/customer-1.jpg"
+            alt="customer"
+            class="customer"
+          />
+          <h3 class="heading heading-h4">Brad Pitt</h3>
+          <p class="text-small">Bardzo fajne ziomeczki. Pozdrawiam ❤️</p>
+          <div class="stars">
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+          </div>
+        </div>
+        <div class="review">
+          <img
+            src="images/customers/customer-2.jpg"
+            alt="customer"
+            class="customer"
+          />
+          <h3 class="heading heading-h4">Leonardo DiCaprio</h3>
+          <p class="text-small">
+            Profesjonalne podejście do klienta, a efekt końcowy wart swojej ceny
+            👌
+          </p>
+          <div class="stars">
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+          </div>
+        </div>
+        <div class="review">
+          <img
+            src="images/customers/customer-3.jpg"
+            alt="customer"
+            class="customer"
+          />
+          <h3 class="heading heading-h4">Bartosz Golański</h3>
+          <p class="text-small">Chłopaki dobrze lecą z tematem. Polecam 😎</p>
+          <div class="stars">
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+            <ion-icon name="star" class="star"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-contact" id="section-contact">
+      <h2 class="heading-h2">
+        Skontaktuj się <span class="text-effect">z nami</span>
+      </h2>
+      <div class="contact-container">
+        <div class="text-box">
+          <h3 class="heading-h3">Kontakt:</h3>
+          <div class="contact-item">
+            <p class="text">+48 123 456 789</p>
+            <ion-icon name="call-outline" class="icon"></ion-icon>
+          </div>
+          <div class="contact-item">
+            <p class="text">michal.olbryt@warsztat.com</p>
+            <ion-icon name="mail-open-outline" class="icon"></ion-icon>
+          </div>
+          <h3 class="heading-h3">Otwarte:</h3>
+          <div class="open-hours">
+            <p class="text">Pon - Pt</p>
+            <p class="text">8:00 - 16:00</p>
+            <p class="text">Sob</p>
+            <p class="text">10:00 - 15:00</p>
+          </div>
+        </div>
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.8523319241626!2d17.929303293590518!3d50.66700222935971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710530ed61870ab%3A0xc5e78e0159602011!2sPubliczne%20Technikum%20Nr%205%20Opole!5e0!3m2!1spl!2spl!4v1679140674054!5m2!1spl!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/profile.php?id=100002394313940"
+          target="_blank"
+        >
+          <ion-icon name="logo-facebook" class="icon"></ion-icon>
+        </a>
+      </div>
+      <div class="social-media">
+        <a href="#" target="_blank">
+          <ion-icon name="logo-instagram" class="icon"></ion-icon>
+        </a>
+      </div>
+      <div class="social-media">
+        <a href="#" target="_blank">
+          <ion-icon name="logo-tiktok" class="icon"></ion-icon>
+        </a>
+      </div>
+    </footer>
+
+    <div class="arrowUp">
+      <a href="#section-header">
+        <ion-icon name="chevron-up-outline" class="icon"></ion-icon>
+      </a>
+    </div>
+    <div class="copyright text-small">
+      Copyright © Warsztat - Michał Olbryt | Powered by Kamil Kaczmarczyk
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+  </body>
+</html>

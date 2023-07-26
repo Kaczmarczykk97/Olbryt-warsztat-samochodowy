@@ -1,0 +1,133 @@
+/******* NAVBAR *******/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.navbar .logo {
+  height: 100%;
+  filter: drop-shadow(0.7rem 0.7rem 1.2rem var(--text-color-white));
+}
+
+.navbar .items-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar .items-list .item {
+  padding: 0 1rem;
+}
+
+.navbar .items-list .item a {
+  display: inline-block;
+  transition: all 0.4s;
+}
+
+.navbar .items-list .item a:hover {
+  transform: translateY(-0.5rem);
+  text-shadow: 1px 1px 5px var(--main-color);
+  filter: drop-shadow(0 0.7rem 1.2rem var(--main-color-blue));
+}
+
+.navbar .menu-hamburger {
+  width: 3.5rem;
+  height: 2rem;
+  padding: 0.2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.navbar .menu-hamburger .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color-white);
+}
+
+/******* HEADER *******/
+.section-header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--section-box-shadow);
+}
+
+.section-header .header-text-container {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header .header-text-container .heading-h1 span {
+  font-size: 5rem;
+}
+
+/***** MEDIA QUERIES *****/
+/* 810px */
+@media (max-width: 50.6em) {
+  .navbar .items-list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  .navbar .menu-hamburger {
+    display: flex;
+  }
+
+  .navbar .items-list.active {
+    opacity: 1;
+    padding: 4rem 2rem 1rem 2rem;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .section-header .header-text-container {
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  .section-header .header-text-container .heading-h1 span {
+    font-size: 4rem;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .section-header .header-text-container .heading-h1 span {
+    font-size: 3.5rem;
+  }
+}
+
+/* 380px */
+@media (max-width: 23.75em) {
+  .section-header .header-text-container .heading-h1 span {
+    font-size: 3.1rem;
+  }
+}

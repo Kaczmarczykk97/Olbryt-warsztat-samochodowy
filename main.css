@@ -1,0 +1,11 @@
+@import "./styles/_base.css";
+@import "./styles/_components.css";
+@import "./styles/_footer.css";
+@import "./styles/_header.css";
+@import "./styles/_helperClasses.css";
+@import "./styles/_sectionAbout.css";
+@import "./styles/_sectionContact.css";
+@import "./styles/_sectionEmployees.css";
+@import "./styles/_sectionGallerty.css";
+@import "./styles/_sectionOffer.css";
+@import "./styles/_sectionReviews.css";

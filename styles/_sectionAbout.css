@@ -1,0 +1,110 @@
+/******* SECTION - ABOUT / "WHY US?" *******/
+
+.section-about .container-about {
+  width: 85%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29.5rem, 1fr));
+  grid-auto-rows: minmax(45rem, 1fr);
+  gap: 1rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow-x: hidden;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.8);
+}
+
+.container-about .about-text-container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.container-about .about-text-container .profit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  gap: 1.5rem;
+}
+
+.container-about .about-img-container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to Top,
+      var(--main-color-blue-opacity),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/section-about.jpg);
+  transform: translateX(4rem) skew(-10deg);
+  background-position: center;
+  background-size: cover;
+}
+
+/***** MEDIA QUERIES *****/
+/* 1000px */
+@media (max-width: 62.5em) {
+  .section-about .container-about {
+    width: 95%;
+  }
+}
+
+/* 810px */
+@media (max-width: 50.6em) {
+  .container-about .about-text-container .profit .text-small {
+    font-size: 1.8rem;
+  }
+
+  .container-about .about-img-container {
+    transform: unset;
+    background-position: top;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+  #section-about {
+    width: 90%;
+  }
+
+  .section-about .container-about {
+    width: 95%;
+    grid-auto-rows: minmax(25rem, 35rem);
+    gap: 0.5rem;
+  }
+
+  .container-about .about-text-container {
+    padding: 1rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .container-about .about-text-container .profit .text-small {
+    font-size: 1.3rem;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .container-about .about-text-container .profit .icon {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+
+/* 380px */
+@media (max-width: 23.75em) {
+  .container-about .about-text-container .profit {
+    gap: 0.5rem;
+  }
+
+  .container-about .about-text-container .profit .icon {
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+
+  .section-about .container-about {
+    grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
+  }
+}
